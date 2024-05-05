@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FurDef>
+    <defName>Featherskin</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Male>Things/Pawn/Humanlike/Bodies/FurCovered_Male</Male>
+      <Female>Things/Pawn/Humanlike/Bodies/FurCovered_Female</Female>
+      <Hulk>Things/Pawn/Humanlike/Bodies/FurCovered_Hulk</Hulk>
+      <Fat>Things/Pawn/Humanlike/Bodies/FurCovered_Fat</Fat>			<!-- Fallback variant. Ideally all avali should only have thin bodytype. -->
+      <Thin>Things/Avali/Bodies/Naked_Thin</Thin>
+      <Child>Things/Pawn/Humanlike/Bodies/Naked_FurChild</Child>
+      <Baby>Things/Pawn/Humanlike/Bodies/Naked_FurChild</Baby><!-- Always covered by swaddled graphic -->
+    </bodyTypeGraphicPaths>
+  </FurDef>
+</Defs>

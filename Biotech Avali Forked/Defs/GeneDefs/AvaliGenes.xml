@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef>
+    <defName>Featherskin</defName>
+    <label>featherskin</label>
+    <labelShortAdj>featherskinned</labelShortAdj>
+    <description>Carriers of this gene grow colourful feathers all over their body. While pretty, they are also extremely flammable.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>2</biostatMet>
+	<neverGrayHair>true</neverGrayHair>
+    <displayCategory>Avali</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Genes/Gene_Featherskin</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <forcedHeadTypes>
+      <li>AvaliHead_Male</li>
+	  <li>AvaliHead_Female</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <exclusionTags>
+      <li>HairStyle</li>
+	  <li>Skin</li>
+      <li>Fur</li>
+    </exclusionTags>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <fur>Featherskin</fur>
+    <skinIsHairColor>true</skinIsHairColor>
+    <tattoosVisible>true</tattoosVisible>
+	<damageFactors>
+      <Flame>2</Flame>
+    </damageFactors>
+	<statFactors>
+      <Flammability>1.5</Flammability>
+    </statFactors>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneTailBase">
+    <defName>Tail_Avali</defName>
+    <label>feathered tail</label>
+    <description>Carriers of this gene grow a thin, whip-like feathered tail.</description>
+    <iconPath>UI/Genes/Gene_TailAvali</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+	<displayCategory>Avali</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+	<minAgeActive>3</minAgeActive>
+    <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Avali/Tail_Male/Tail</texPath>
+        <colorType>Hair</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+	<drawSize>1.5</drawSize>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.03, 0.2, -0.25)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, -0.1, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-.5, -.2, -0.10)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(.5, 0.2, -0.10)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Temperamental</defName>
+    <label>temperamental</label>
+    <labelShortAdj>temperamental</labelShortAdj>
+    <description>Carriers of this gene have a hair-trigger all the time. They are twice as likely to start social fights and tend to break easily under pressure.</description>
+    <iconPath>UI/Genes/Gene_Temperamental</iconPath>
+	<displayCategory>Avali</displayCategory>
+    <socialFightChanceFactor>2</socialFightChanceFactor>
+    <prisonBreakMTBFactor>0.8</prisonBreakMTBFactor>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <biostatMet>2</biostatMet>
+    <exclusionTags>
+      <li>Aggressive</li>
+    </exclusionTags>
+	<statFactors>
+		<MentalBreakThreshold>1.15</MentalBreakThreshold>
+	</statFactors>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>angy</symbol></li>
+        <li><symbol>irri</symbol></li>
+        <li><symbol>temper</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>tant</symbol></li>
+		<li><symbol>atum</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>StreamlinedMetabolism</defName>
+    <label>streamlined metabolism</label>
+    <labelShortAdj>streamlined</labelShortAdj>
+    <description>Carriers of this gene have a naturally efficient and optimised metabolism.</description>
+    <iconPath>UI/Genes/Gene_StreamlinedMetabolism</iconPath>
+	<displayCategory>Avali</displayCategory>
+    <biostatMet>4</biostatMet>
+	<biostatCpx>8</biostatCpx>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>effi</symbol></li>
+        <li><symbol>meta</symbol></li>
+		<li><symbol>boli</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+		<li><symbol>liner</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>KeenHearing</defName>
+    <label>keen hearing</label>
+    <labelShortAdj>keen hearing</labelShortAdj>
+    <description>Carriers of this gene have an exceptionally keen hearing making prediction of enemy attacks easier.</description>
+    <iconPath>UI/Genes/Gene_KeenHearing</iconPath>
+	<displayCategory>Avali</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <biostatMet>-2</biostatMet>
+    <exclusionTags>
+    </exclusionTags>
+    <capMods>
+      <li>
+        <capacity>Hearing</capacity>
+        <postFactor>2.0</postFactor>
+      </li>
+	</capMods>
+	<statOffsets>
+		<MeleeDodgeChance>10</MeleeDodgeChance>
+	</statOffsets>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>hear</symbol></li>
+        <li><symbol>ear</symbol></li>
+        <li><symbol>sound</symbol></li>
+        <li><symbol>perce</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>rer</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+   <GeneDef ParentName="GeneMinTempBase">
+    <defName>MinTemp_SuperDecrease</defName>
+    <label>cold resistant</label>
+    <labelShortAdj>cold</labelShortAdj>
+    <description>Carriers of this gene have adapted to live in cold enviroments. They can tolerate extremely cold temperatures and only take 25% of the normal damage from cold.</description>
+    <iconPath>UI/Genes/Gene_ColdResistant</iconPath>
+    <displayOrderInCategory>20</displayOrderInCategory>
+    <displayCategory>Avali</displayCategory>
+	<damageFactors>
+      <Frostbite>0.2</Frostbite>
+    </damageFactors>
+    <statOffsets>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+    </statOffsets>
+	<biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>ice</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneMaxTempBase">
+    <defName>MaxTemp_SuperIncrease</defName>
+    <label>heat super-weakness</label>
+    <labelShortAdj>hot</labelShortAdj>
+    <description>Carriers of this gene are much less comfortable in warm temperatures.</description>
+    <iconPath>UI/Icons/Genes/Gene_MaxTemperatureLargeDecrease</iconPath>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <displayCategory>Avali</displayCategory>
+    <statOffsets>
+      <ComfyTemperatureMax>-20</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatMet>4</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>cold</symbol></li>
+        <li><symbol>cool</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>EmpoweredRush</defName>
+    <label>empowered rush</label>
+    <description>Carriers have a special set of fast-reacting glands that can drastically increase speed and mobility on demand.</description>
+    <iconPath>UI/Genes/Gene_EmpoweredRush</iconPath>
+    <displayCategory>Avali</displayCategory>
+    <abilities>
+      <li>EmpoweredRush</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>EmpoweredRush</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+	<biostatCpx>2</biostatCpx>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>agi</symbol></li>
+        <li><symbol>excite</symbol></li>
+        <li><symbol>brisk</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>le</symbol></li>
+        <li><symbol>speed</symbol></li>
+        <li><symbol>line</symbol></li>
+        <li><symbol>fast</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+</Defs>

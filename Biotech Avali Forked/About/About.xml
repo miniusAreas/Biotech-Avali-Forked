@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Biotech Avali Forked</name>
+	<author>Zephram, miniusAreas</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>biotech.avali.forked</packageId>
+	<modDependencies>
+		<li>
+			<packageId>ludeon.rimworld.biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>ludeon.rimworld.biotech</li>
+	</loadAfter>
+	<description>Avali are a race of small, feathered raptor-like creatures with four ears, large eyes, bad temper and affinity for low temperatures. They are fast, agile and have strong melee prowess, but quite fragile and intolerant of even moderate temperatures by human standards. Outside combat they tend to spend time with their kin, admiring art and pretty, shiny things. Now for 1.5!</description>
+</ModMetaData>

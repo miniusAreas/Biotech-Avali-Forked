@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <PawnKindDef ParentName="MercenaryGunnerBase">
+    <defName>Mercenary_GunnerAvali</defName>
+    <label>avali gunner</label>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <apparelTags Inherit="False">
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenarySlasherBase">
+    <defName>Mercenary_SlasherAvali</defName>
+    <label>avali slasher</label>
+    <initialResistanceRange>10~16</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>Mercenary_EliteAvali</defName>
+    <label>avali elite</label>
+    <initialResistanceRange>15~23</initialResistanceRange>
+    <apparelTags Inherit="False">
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+  </PawnKindDef>
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <XenotypeDef>
+    <defName>Avali</defName>
+    <label>avali</label>
+	<description>A xenotype that resembles a feathered raptor-like creature with big eyes and four ears. Avali possess extreme speed, exceptional agility and melee prowess, but their fragility requires them to be more careful in combat. Having bad eyesight they heavily rely on their keen hearing to predict enemy movement and avoid their attacks. Avali can release a burst of energy, greatly increasing their speed and resilience, which can be used to quickly engage or disengage. Outside combat, they tend to spend time with their kin, admiring art and pretty, shiny things. Due to their constitution, avali perform badly in hard, manual labor.\n\nTypically living a nomadic lifestyle, avali tend to spread around the world in loosely connected tribes.</description>
+    <descriptionShort>A small feathered raptor-like creature with big eyes and four ears. Known for their bad temper and a love of the musical arts and shiny things.</descriptionShort>
+    <iconPath>UI/Xenotypes/Avali</iconPath>
+	<inheritable>true</inheritable>
+    <displayPriority>-3601</displayPriority>
+	<nameMaker>NamerPersonAvali</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <genes>
+	  <li>Featherskin</li>
+	  <li>Tail_Avali</li>
+	  <li>KeenHearing</li>
+	  <li>EmpoweredRush</li>
+	  <li>Body_Thin</li>
+	  <li>Hair_BaldOnly</li>
+	  <li>Nearsighted</li>
+	  <li>Delicate</li>
+	  <li>DarkVision</li>
+	  <li>Temperamental</li>
+	  <li>Mood_Optimist</li>
+	  <li>StreamlinedMetabolism</li>
+	  <li>MinTemp_SuperDecrease</li>
+	  <li>MaxTemp_SuperIncrease</li>
+	  <li>MoveSpeed_VeryQuick</li>
+	  <li>AptitudePoor_Animals</li>
+	  <li>AptitudeTerrible_Mining</li>
+	  <li>AptitudeStrong_Melee</li>
+	  <li>AptitudeStrong_Artistic</li>
+	  <li>Hair_Gray</li>
+	  <li>Hair_LightTeal</li>
+	  <li>Hair_LightGreen</li>
+	  <li>Hair_LightOrange</li>
+	  <li>Hair_BrightRed</li>
+    </genes>
+	</XenotypeDef>
+</Defs>

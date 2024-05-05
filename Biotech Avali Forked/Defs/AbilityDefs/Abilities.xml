@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>EmpoweredRush</defName>
+    <label>empowered rush</label>
+    <description>Use special glands to drastically increase speed and mobility.</description>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Genes/Gene_EmpoweredRush</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+	<cooldownTicksRange>48000</cooldownTicksRange>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>1</uiOrder>
+    <statBases>
+      <Ability_Duration>80</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.2</warmupTime>
+	  <warmupEffecter>JumpMechWarmupEffect</warmupEffecter> <!-- It actually fits quite well! -->
+	  <range>-1</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>EmpoweredRushBuff</hediffDef>
+        <onlyBrain>false</onlyBrain>
+        <onlyApplyToSelf>true</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

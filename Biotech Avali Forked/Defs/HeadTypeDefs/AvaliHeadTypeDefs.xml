@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>AvaliHead_Male</defName>
+    <randomChosen>false</randomChosen>
+<!--	<hairMeshSize>(0, 0)</hairMeshSize> -->
+    <beardMeshSize>(0, 0)</beardMeshSize>
+	<beardOffset>(0, 0, -0.05)</beardOffset>
+    <gender>Male</gender>
+    <requiredGenes>
+      <li>Featherskin</li>
+    </requiredGenes>
+    <graphicPath>Things/Avali/Heads/Male_Average_Normal</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>AvaliHead_Female</defName>
+    <randomChosen>false</randomChosen>
+<!--	<hairMeshSize>(0, 0)</hairMeshSize> -->
+    <beardMeshSize>(0, 0)</beardMeshSize>
+	<beardOffset>(0, 0, -0.05)</beardOffset>
+	<gender>Female</gender>
+    <requiredGenes>
+      <li>Featherskin</li>
+    </requiredGenes>
+    <graphicPath>Things/Avali/Heads/Female_Average_Normal</graphicPath>
+  </HeadTypeDef>
+</Defs>

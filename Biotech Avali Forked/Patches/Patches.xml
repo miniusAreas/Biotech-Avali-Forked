@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Genes</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/XenotypeDef[defName="Avali"]/genes</xpath>
+		<value>
+            <li>AG_EggLaying</li>
+		</value>
+	</match>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Blood Color Genes</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/XenotypeDef[defName="Avali"]/genes</xpath>
+		<value>
+            <li>BloodPurple</li>
+		</value>
+	</match>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Less Blood Color Genes</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/XenotypeDef[defName="Avali"]/genes</xpath>
+		<value>
+            <li>BloodPurple</li>
+		</value>
+	</match>
+</Operation>
+</Patch>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="PirateBandBase">
+    <defName>AvaliRaiders</defName>
+    <label>avali raiders</label>
+    <description>A loose band of avali that have turned to life of violence, raiding and pirating. Having a streak of xenophobia, they refuse to deal with outsiders. Nonetheless, they have gathered quite a lot of equipment from their raiding campaigns and can pose a serious threat especially in close range.</description>
+    <factionIconPath>World/AvaliRaiders</factionIconPath>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <pawnSingular>avali raider</pawnSingular>
+    <pawnsPlural>avali raiders</pawnsPlural>
+    <disallowedRaidStrategies> <!-- Avali and mining doesn't mix well -->
+      <li>ImmediateAttackSappers</li>
+      <li>ImmediateAttackBreaching</li>
+      <li>ImmediateAttackBreachingSmart</li>
+    </disallowedRaidStrategies>
+    <requiredMemes Inherit="False">
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+    </requiredMemes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Avali>999</Avali>
+      </xenotypeChances>
+    </xenotypeSet>
+    <pawnGroupMakers Inherit="False">
+	  <!-- Ranged and melee mix -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Mercenary_GunnerAvali>8</Mercenary_GunnerAvali>
+          <Mercenary_SlasherAvali>15</Mercenary_SlasherAvali>
+          <Mercenary_Sniper>5</Mercenary_Sniper>
+          <Mercenary_EliteAvali>5</Mercenary_EliteAvali>
+          <PirateBoss>5</PirateBoss>
+        </options>
+      </li>
+	  <!-- Melee only -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Thrasher>10</Thrasher>
+		  <Mercenary_SlasherAvali>10</Mercenary_SlasherAvali>
+          <PirateBoss>5</PirateBoss>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>15</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Mercenary_GunnerAvali>8</Mercenary_GunnerAvali>
+		  <Mercenary_SlasherAvali>15</Mercenary_SlasherAvali>
+          <Mercenary_EliteAvali>5</Mercenary_EliteAvali>
+          <PirateBoss>1</PirateBoss>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>2.5</commonality>
+        <maxTotalPoints>1000</maxTotalPoints>
+        <options>
+          <Drifter>10</Drifter>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Thrasher>3</Thrasher>
+          <Mercenary_SlasherAvali>15</Mercenary_SlasherAvali>
+          <Mercenary_Sniper>5</Mercenary_Sniper>
+          <Mercenary_GunnerAvali>8</Mercenary_GunnerAvali>
+          <Mercenary_EliteAvali>6</Mercenary_EliteAvali>
+          <PirateBoss>10</PirateBoss>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+</Defs>
